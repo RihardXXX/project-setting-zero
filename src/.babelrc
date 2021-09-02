@@ -1,4 +1,20 @@
 {
-  "presets": ["@babel/preset-env"],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "corejs": 3,
+        "useBuiltIns": "usage",
+        "debug": true,
+        "targets": [
+          "> 0.3%"
+          // "last 2 chrome versions",
+          // "last 2 firefox versions",
+          // "last 2 ios versions"
+        ]
+      }
+    ],
+    ["@babel/preset-react"]
+  ],
   "plugins": ["@babel/plugin-proposal-function-sent"]
 }

@@ -1,4 +1,11 @@
-const run = (a) => console.log(`un $${a}`);
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const App = () => <h3>JSX Syntacsys</h3>;
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
+const run = async (a) => console.log(`un $${a}`);
 
 class Foo {
   constructor(test) {
@@ -11,7 +18,9 @@ const arrowFunc = (a) => a * a;
 const arr = [1, 2, 3, 4, 5];
 const spreadOper = [...arr];
 
-run(5);
+run(5)
+  .then(() => console.log('data'))
+  .catch(() => console.log('error'));
 
 // plugin-proposal-optional-chaining
 const obj = {
