@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Rihard Alikhanov",
@@ -17,7 +18,13 @@
     "@babel/plugin-transform-classes": "^7.14.9",
     "@babel/plugin-transform-template-literals": "^7.14.5",
     "@babel/preset-env": "^7.15.0",
-    "@babel/preset-react": "^7.14.5"
+    "@babel/preset-react": "^7.14.5",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "ref-loader": "^1.0.3",
+    "webpack": "^5.51.2",
+    "webpack-cli": "^4.8.0"
   },
   "dependencies": {
     "core-js": "^3.17.0",
