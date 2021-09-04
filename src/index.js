@@ -16,6 +16,6 @@ import ReactDOM from 'react-dom';
 
 import './main.scss';
 
-const App = () => <h1>Helo world! it is testing</h1>;
+const App = () => <h1>Webpack dev-server start</h1>;
 
 ReactDOM.render(<App />, document.getElementById('root'));
